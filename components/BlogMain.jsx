@@ -5,8 +5,32 @@ import Link from "next/link";
 import axios from "axios";
 import {API_PATH} from "@/components/const";
 const BlogMain = () => {
+    const menus2 = [
+        {
+            id: 1,
+            label: "Menu 1",
+            key: "menu_1",
+            children: [
+                { id: 11, label: "Submenu 1-1", key: "submenu_1_1" },
+                { id: 12, label: "Submenu 1-2", key: "submenu_1_2" },
+            ],
+        },
+        {
+            id: 2,
+            label: "Menu 2",
+            key: "menu_2",
+            children: [
+                { id: 21, label: "Submenu 2-1", key: "submenu_2_1" },
+            ],
+        },
+    ];
     const [menus, setMenus] = useState([]);
     const [blogs, setBlogs] = useState({});
+    const [openMenuKey, setOpenMenuKey] = useState(null);
+
+    const handleToggle = (key) => {
+        setOpenMenuKey(prevKey => (prevKey === key ? null : key));
+    };
 
     const getBlogs = (id) => {
         axios.get(API_PATH + "blog/" + id + "/")
@@ -88,6 +112,37 @@ const BlogMain = () => {
                                 {/*    mode="inline"*/}
                                 {/*    items={menus}*/}
                                 {/*/>*/}
+                                <div style={{ width: '250px', fontFamily: 'sans-serif' }} >
+                                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                                        {menus.map(menu => (
+                                            <li key={menu.key} >
+                                                <div
+                                                    onClick={() => handleToggle(menu.key)}
+                                                    style={{
+                                                        cursor: 'pointer',
+                                                        padding: '10px',
+                                                        fontSize: '14px',
+                                                        backgroundColor: openMenuKey === menu.key ? '#f0f0f0' : '#e0e0e0',
+                                                        borderBottom: '1px solid #ccc'
+                                                    }}
+                                                    className="d-flex justify-content-between align-items-center   menumenu ">
+
+                                                    {menu.label} <img className="ar-down" src="/img/arrowdown.png" alt=""/>
+                                                </div>
+                                                {openMenuKey === menu.key && menu.children && (
+                                                    <ul style={{ listStyle: 'none', paddingLeft: '20px', fontSize: "12px",  backgroundColor: '#fafafa' }}>
+                                                        {menu.children.map(sub => (
+                                                            <li key={sub.key} onClick={() => getBlogs(sub?.id)} className="cursor-pointer " style={{ padding: '8px 0' }}>
+                                                                {sub.label}
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                )}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+
                             </div>
                         </div>
 

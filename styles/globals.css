@@ -4307,3 +4307,16 @@ section .content{
 .nextjs-toast , .nextjs-toast, .nextjs-toast-errors-parent , .nextjs-error-with-static{
     display: none !important;
 }
+.menumenu{
+    border: none !important;
+    border-radius: 6px;
+    margin-bottom: 3px;
+    /*background: rgba(0, 0, 0, 0.06);*/
+    background: transparent !important;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.ar-down{
+    width: 8px;
+}
