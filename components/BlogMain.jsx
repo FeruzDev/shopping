@@ -1,7 +1,5 @@
 "use client";
-
 import React, {useEffect, useState} from "react";
-import styles from "../styles/blog.module.css";
 import Link from "next/link";
 import {Menu} from 'antd';
 import axios from "axios";
@@ -11,7 +9,6 @@ const BlogMain = () => {
     const [blogs, setBlogs] = useState({});
 
     const getBlogs = (id) => {
-
         axios.get(API_PATH + "blog/" + id + "/")
             .then(res => {
                 setBlogs(res.data);
@@ -32,7 +29,7 @@ const BlogMain = () => {
         }
 
         if (selectedSubMenu) {
-            console.log("Bosilgan sub menu ID:", selectedSubMenu.id);
+            console.log("Bosilgan sub menu ID:", selectedSubMenu?.id);
         } else {
             console.log("Sub menu topilmadi yoki menu bosildi");
         }
@@ -40,11 +37,14 @@ const BlogMain = () => {
         getBlogs(selectedSubMenu?.id)
     }
 
-    useEffect(() => {
+    const getMenus = () => {
         axios.get(API_PATH + "menu/")
             .then(res => {
                 setMenus(res.data);
             })
+    }
+    useEffect(() => {
+        getMenus()
     }, [])
     return (
         <div>
