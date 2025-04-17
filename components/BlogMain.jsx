@@ -1,7 +1,7 @@
 "use client";
 import React, {useEffect, useState} from "react";
 import Link from "next/link";
-import {Menu} from 'antd';
+// import {Menu} from 'antd';
 import axios from "axios";
 import {API_PATH} from "@/components/const";
 const BlogMain = () => {
@@ -80,14 +80,14 @@ const BlogMain = () => {
                         <div className="col-md-3">
                             <div className="p-3 ins-menu">
 
-                                <Menu
-                                    onClick={onClick}
-                                    style={{width: 256}}
-                                    // defaultSelectedKeys={['1']}
-                                    // defaultOpenKeys={['sub1']}
-                                    mode="inline"
-                                    items={menus}
-                                />
+                                {/*<Menu*/}
+                                {/*    onClick={onClick}*/}
+                                {/*    style={{width: 256}}*/}
+                                {/*    // defaultSelectedKeys={['1']}*/}
+                                {/*    // defaultOpenKeys={['sub1']}*/}
+                                {/*    mode="inline"*/}
+                                {/*    items={menus}*/}
+                                {/*/>*/}
                             </div>
                         </div>
 
