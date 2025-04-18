@@ -20,7 +20,7 @@ jobs:
 
       # 2) SSH agent’ni yuklab, private key bilan sozlaydi
       - name: Setup SSH agent
-        uses: webfactory/ssh-agent@v0
+        uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
