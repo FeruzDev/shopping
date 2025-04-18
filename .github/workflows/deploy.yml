@@ -47,3 +47,6 @@ jobs:
             # Fon rejimida container’larni ishga tushirish
             docker-compose up -d
           EOF
+
+
+          
