@@ -1,5 +1,8 @@
+# .github/workflows/deploy.yml
+
 name: CI/CD Deploy
 
+# “main” branch’iga har push bo‘lganda ishga tushadi
 on:
   push:
     branches:
@@ -7,24 +10,43 @@ on:
 
 jobs:
   deploy:
+    # GitHub Actions runner – so‘nggi Ubuntu imiji
     runs-on: ubuntu-latest
 
     steps:
+      # 1) Kodni checkout (clone) qiladi
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # 2) SSH agent’ni yuklab, private key bilan sozlaydi
       - name: Setup SSH agent
-        uses: webfactory/ssh-agent@v0.5.3
+        uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+      # 3) Serverga ulanib, loyihani yangilaydi va Docker Compose bilan qayta build & deploy qiladi
       - name: Pull & rebuild on server
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
+          ssh -o StrictHostKeyChecking=no \
+              ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
+            # Deploy papkasiga o'ting
             cd /var/www/shopping
+
+            # Remote'dan so‘nggi commit'larni yuklab oling
             git fetch --all
+
+            # Ishlashdagi kodni origin/main bilan sinxron qiling
             git reset --hard origin/main
+
+            # Yaratilgan konteynerlarni o‘chirib tashlang
             docker-compose down
+
+            # Image’larni yangilab, qayta qurish
             docker-compose build --pull
+
+            # Fon rejimida container’larni ishga tushirish
             docker-compose up -d
           EOF
+
+
+          
