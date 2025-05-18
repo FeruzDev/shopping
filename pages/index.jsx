@@ -8,44 +8,56 @@ import Diploms from "@/components/Diploms";
  const Index = () => {
     return (
         <div>
-            <video src="/img/kolo.mp4" style={{width: "100%", height: "100%"}} muted autoPlay></video>
+            {/*<video src="/img/kolo.mp4" style={{width: "100%", height: "100%"}} muted autoPlay></video>*/}
 
-            <div className="d-none">
+            <div className="">
                 <section className="first-screen mb-0">
                     <div className="all">
                         <header>
-                            <nav>
-                                <ul>
-                                    <li>
-                                        <Link href="/">СПЕЦИАЛИЗАЦИЯ</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/">СЕРТИФИКАТЫ</Link>
-                                    </li>
-                                    <li><Link className="text-uppercase" href="/blog">Инструкция</Link></li>
-                                    <li><Link className="text-uppercase" href="/products">Продукция</Link></li>
-                                </ul>
-                                <span className="exit"></span>
-                            </nav>
+                            <div className="d-flex justify-content-between">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <Link href="/">СПЕЦИАЛИЗАЦИЯ</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/">ХИРУРГИЯ</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/">БАРИАТРИЯ</Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/">ОНКОЛОГИЯ</Link>
+                                        </li>
+                                        <li className="text-uppercase">
+                                            <Link href="/">КОЛОПРОКтология</Link>
+                                        </li>
+                                        <li><Link className="text-uppercase" href="/blog">Инструкция</Link></li>
+                                        <li><Link className="text-uppercase" href="/products">Продукция</Link></li>
+                                    </ul>
+                                    <span className="exit"></span>
+                                </nav>
 
-                            <div className="contacts">
-                                <div className="address">
-                                    <a className="" href="tel:+998970448868">+998 97 044 88 68</a></div>
-                                <div className="soc">
-                                    <a href="https://t.me/+998970448868"><img
-                                        src="/img/telegram.png"
-                                        height="17"/></a>
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11"
-                                             viewBox="0 0 17 11" fill="none">
-                                            <script xmlns="" id="eppiocemhmnlbhjplcgkofciiegomcon"/>
-                                            <script xmlns=""/>
-                                            <script xmlns=""/>
-                                            <path fillRule="evenodd" clipRule="evenodd"
-                                                  d="M6.74335 3.15023L11.3333 5.31925L6.74335 7.48826V3.15023ZM17 4.9061C17 3.66667 16.83 2.37559 16.83 2.37559C16.83 2.37559 16.66 1.29108 16.15 0.826291C15.5267 0.206573 14.79 0.206573 14.45 0.15493C12.07 9.23452e-08 8.5 0 8.5 0C8.5 0 4.93 9.23452e-08 2.55 0.15493C2.21 0.206573 1.47333 0.206573 0.85 0.826291C0.34 1.29108 0.17001 2.37559 0.17001 2.37559C0.17001 2.37559 0 3.61502 0 4.9061V6.0939C0 7.33333 0.17001 8.62441 0.17001 8.62441C0.17001 8.62441 0.34 9.70892 0.85 10.1737C1.47333 10.7934 2.32334 10.7934 2.72001 10.8451C4.08001 10.9484 8.5 11 8.5 11C8.5 11 12.07 11 14.45 10.8451C14.79 10.7934 15.5267 10.7934 16.15 10.1737C16.66 9.70892 16.83 8.62441 16.83 8.62441C16.83 8.62441 17 7.38498 17 6.0939V4.9061Z"
-                                                  fill="white"/>
-                                        </svg>
-                                    </a>
+                                <div className="contacts">
+                                    <div className="address">
+                                        <a className="" href="tel:+998970448868">+998 88 044 88 68</a>
+                                    </div>
+                                    <div className="soc">
+                                        <a href="https://t.me/+998970448868"><img
+                                            src="/img/telegram.png"
+                                            height="17"/></a>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11"
+                                                 viewBox="0 0 17 11" fill="none">
+                                                <script xmlns="" id="eppiocemhmnlbhjplcgkofciiegomcon"/>
+                                                <script xmlns=""/>
+                                                <script xmlns=""/>
+                                                <path fillRule="evenodd" clipRule="evenodd"
+                                                      d="M6.74335 3.15023L11.3333 5.31925L6.74335 7.48826V3.15023ZM17 4.9061C17 3.66667 16.83 2.37559 16.83 2.37559C16.83 2.37559 16.66 1.29108 16.15 0.826291C15.5267 0.206573 14.79 0.206573 14.45 0.15493C12.07 9.23452e-08 8.5 0 8.5 0C8.5 0 4.93 9.23452e-08 2.55 0.15493C2.21 0.206573 1.47333 0.206573 0.85 0.826291C0.34 1.29108 0.17001 2.37559 0.17001 2.37559C0.17001 2.37559 0 3.61502 0 4.9061V6.0939C0 7.33333 0.17001 8.62441 0.17001 8.62441C0.17001 8.62441 0.34 9.70892 0.85 10.1737C1.47333 10.7934 2.32334 10.7934 2.72001 10.8451C4.08001 10.9484 8.5 11 8.5 11C8.5 11 12.07 11 14.45 10.8451C14.79 10.7934 15.5267 10.7934 16.15 10.1737C16.66 9.70892 16.83 8.62441 16.83 8.62441C16.83 8.62441 17 7.38498 17 6.0939V4.9061Z"
+                                                      fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -58,7 +70,7 @@ import Diploms from "@/components/Diploms";
                             <div className="col-md-6">
                                 <div className="text">
                                     <h1>РИЗАЕВ ОБИД СОБИРОВИЧ</h1>
-                                    <p>ЭКСПЕРТ В ОБЛАСТИ ИННОВАЦИОННЫХ ЛАПАРОСКОПИЧЕСКИХ И РОБОТ-АССИСТИРОВАННОЙ ХИРУРГИИ. АБДОМИНАЛЬНАЯ ОНКОХИРУРГИЯ, КОЛОПРОКТОЛОГИЯ.</p>
+                                    <p>ЭКСПЕРТ В ОБЛАСТИ ИННОВАЦИОННЫХ ЛАПАРОСКОПИЧЕСКИХ И РОБОТ-АССИСТИРОВАННОЙ ХИРУРГИИ. АБДОМИНАЛЬНАЯ ОНКОХИРУРГИЯ, КОЛОПРОКТОЛОГИЯ, БАРИАТРИЯ.</p>
 
                                     <div className="benefits">
                                         <div className="block">
@@ -72,7 +84,9 @@ import Diploms from "@/components/Diploms";
                                                 </svg>
 
                                             </div>
-                                            Первая категория по хирургии
+                                            Высшая
+                                            категория
+                                            по хирургии
                                         </div>
                                         <div className="block">
                                             <div className="icon">
@@ -98,7 +112,9 @@ import Diploms from "@/components/Diploms";
                                                         fill="#3957CA"/>
                                                 </svg>
                                             </div>
-                                            Главный хирург клиники Shox international hospital
+                                            Главный хирург
+                                            Shox International
+                                            Hospital
                                         </div>
                                         <div className="block">
                                             <div className="icon">
@@ -116,7 +132,7 @@ import Diploms from "@/components/Diploms";
                                         </div>
                                     </div>
                                     <div className="block-number">
-                                        <a className="number text-decoration-none" href="tel:+998970448868">+998 (97) 044-88-68</a>
+                                        <a className="number text-decoration-none" href="tel:+998970448868">+998 (88) 044-88-68</a>
                                     </div>
                                 </div>
                             </div>
@@ -128,7 +144,7 @@ import Diploms from "@/components/Diploms";
                         </div>
                     </div>
                 </section>
-                <section className="first-screen mt-3">
+                <section className="first-screen mt-3 m-0 h-auto">
                     <div className="all">
 
                         <div className="row">
@@ -140,7 +156,7 @@ import Diploms from "@/components/Diploms";
                             </div>
                             <div className="col-md-6">
                                 <div className="text">
-                                    <h1>ТОЛИПОВ ДАВЛАХАН МУСУЛМОН УГЛИ</h1>
+                                    <h1>ТОЛИПОВ ДАВЛАХОН МУСУЛМОН УГЛИ</h1>
                                     <p>
                                         Разбирает с проблемы колостомы и реконструктивное операции кишечники.</p>
 
@@ -183,7 +199,7 @@ import Diploms from "@/components/Diploms";
                                                         fill="#3957CA"/>
                                                 </svg>
                                             </div>
-                                            <span className="text-lowercase"> ХИТРУРГ-КОЛОПРОКТОЛОГ</span> Shox international hospital
+                                            <span className="text-lowercase"> ХИТРУРГ-КОЛОПРОКТОЛОГ</span> SBJ MEDICAL
                                         </div>
                                         <div className="block">
                                             <div className="icon">
@@ -201,7 +217,7 @@ import Diploms from "@/components/Diploms";
                                         </div>
                                     </div>
                                     <div className="block-number">
-                                        <a className="number text-decoration-none" href="tel:+998970448868">+998 (97) 044-88-68</a>
+                                        <a className="number text-decoration-none" href="tel:+998970448868">+998 (88) 044-88-68</a>
                                     </div>
                                 </div>
                             </div>
@@ -213,7 +229,7 @@ import Diploms from "@/components/Diploms";
                     <section className="content">
                         <div className="all">
                             <h3>КОГДА МОЖНО ПОМОЧЬ КАЖДОМУ</h3>
-                            <h2>Почему пациенты обращаются к&nbsp;доктору к нам?</h2>
+                            <h2>Почему пациенты обращаются к&nbsp;<span className="text-capitalize">Толипову Д.M</span>?</h2>
                             <div className="why-block">
                                 <div className="pic"><img src="/img/pic01.png"/></div>
                                 <div className="text">
@@ -416,7 +432,8 @@ import Diploms from "@/components/Diploms";
                     <section className="content" id="sit">
                         <div className="all">
                             <h3>СПЕЦИАЛИЗАЦИЯ</h3>
-                            <h2>В&nbsp;каких случаях доктор Ризаев сможет вам помочь?</h2>
+                            <h2>
+                                В какых случях нашей специалисты поможет при онкологии</h2>
 
                             <div className="cases">
                                 <div className="block">
@@ -613,12 +630,16 @@ import Diploms from "@/components/Diploms";
                                 </div>
                             </div>
 
+
+
+                            <h2 className="text-center mb-0 mt-0 p-0">ХИРУРГИЯ</h2>
+
                             <h3>ГЛАВНОЕ – УВЕРЕННОСТЬ</h3>
                             <h2>Выбор оптимальной тактики хирургического лечения</h2>
 
                             <div className="why-block flex-start">
                                 <div className="pic">
-                                    <img src="/img/savedd3.jpg" alt=""/>
+                                    <img src="/img/img1233.png" alt=""/>
                                 </div>
                                 <div className="text">
                                     <p>Цель хирурга&nbsp;&mdash; не&nbsp;только удалить патологическое образование, решить
@@ -711,9 +732,14 @@ import Diploms from "@/components/Diploms";
                                                 </svg>
 
                                             </div>
-                                            В&nbsp;сложных случаях в&nbsp;клинике Medica&nbsp;24собирается экспертный
-                                            консилиум с&nbsp;участием
-                                            этого доктора.
+                                            {/*В&nbsp;сложных случаях в&nbsp;клинике Medica&nbsp;24собирается экспертный*/}
+                                            {/*консилиум с&nbsp;участием*/}
+                                            {/*этого доктора.*/}
+
+
+                                            В сложных случаях наша команда • собирается экспертный
+                                            консилиум с участием этого
+                                            доктора.
                                         </div>
                                     </div>
 
@@ -723,33 +749,64 @@ import Diploms from "@/components/Diploms";
                         </div>
                     </section>
                 </div>
-                <section className="achievements bg02">
-                    <div className="all">
-                        <div className="block">
-                            <div className="count round">
-                                <div><img src="/img/prize.svg"/></div>
-                            </div>
-                            <p>единственный специалист
+                {/*<section className="achievements bg02">*/}
+                {/*    <div className="all">*/}
+                {/*        <div className="block">*/}
+                {/*            <div className="count round">*/}
+                {/*                <div><img src="/img/prize.svg"/></div>*/}
+                {/*            </div>*/}
+                {/*            <p>единственный специалист*/}
 
-                                совершает операции хирургические и также онкологические с помощью робота-ассистента
-                                REVO.</p>
-                        </div>
+                {/*                совершает операции хирургические и также онкологические с помощью робота-ассистента*/}
+                {/*                REVO.</p>*/}
+                {/*        </div>*/}
 
-                        <div className="block">
-                            <div className="count round">
-                                <div><img src="/img/lamp.svg"/></div>
-                            </div>
-                            <p>внедрил малоинвазивные эндоскопические операции при ранних формах рака органов ЖКТ</p>
+                {/*        <div className="block">*/}
+                {/*            <div className="count round">*/}
+                {/*                <div><img src="/img/lamp.svg"/></div>*/}
+                {/*            </div>*/}
+                {/*            <p>внедрил малоинвазивные эндоскопические операции при ранних формах рака органов ЖКТ</p>*/}
+                {/*        </div>*/}
+                {/*        <div className="block">*/}
+                {/*            <div className="count round">*/}
+                {/*                <div><img src="/img/stars.svg"/></div>*/}
+                {/*            </div>*/}
+                {/*            <p>спас множестно жизней благодаря проведению ранней диагностики рака органов ЖКТ</p>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</section>*/}
+
+
+                <div className="  content mb-5 all">
+                    <h2>Колопроктология</h2>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <img className="w-100" src="/img/img1234.jpg" alt=""/>
                         </div>
-                        <div className="block">
-                            <div className="count round">
-                                <div><img src="/img/stars.svg"/></div>
-                            </div>
-                            <p>спас множестно жизней благодаря проведению ранней диагностики рака органов ЖКТ</p>
+                        <div className="col-md-6">
+                            <p>
+
+                                Колопроктология - это раздел медицины, который занимается диагностикой, лечением и профилактикой заболеваний толстого кишечника, прямой кишки и анального канала. К наиболее распространённым заболеваниям, с которыми работает колопроктолог, относятся геморрой, анальные трещины, свищи, полипы и воспалительные процессы.
+                                <br/>
+                                <br/>
+                                Дезартеризация геморроидальных узлов (HAL-RAR): процедура проводится под контролем допплера и позволяет эффективно лечить геморрой.
+                               <br/>
+                               <br/>
+                                Эти методы обеспечивают меньшее количество осложнений, минимальный болевой синдром и более короткий период реабилитации.
+                            </p>
                         </div>
                     </div>
-                </section>
-                <div className="container">
+
+                </div>
+                <div className="  content mb-5 all">
+
+                    <div className="all ">
+                        <h2>Бариатрическая хирургия лечение сахарного диабета и ожирение</h2>
+                        <p>Бариатрические операции - это хирургические вмешательства, направленные на лечение ожирения. Они помогают уменьшить объем желудка или изменить процесс пищеварения, чтобы человек мог насыщаться меньшим количеством пищи и получать больше энергии. </p>
+                        <p>Бариатрические операции могут быть эффективным методом лечения сахарного диабета 2 типа, особенно у пациентов с ожирением. Эти операции помогают улучшить метаболизм и снизить уровень сахара в крови, что может привести к ремиссии диабета</p>
+
+                    </div>
+
                 </div>
                 <section className="content">
                     <div className="all">
@@ -763,7 +820,7 @@ import Diploms from "@/components/Diploms";
                                     были&nbsp;бы
                                     признаны безнадежными. </p>
                                 <div className="block-number">
-                                    <a className="number" href="tel:+998970448868">+998 (97) 044-88-68</a>
+                                    <a className="number" href="tel:+998970448868">+998 (88) 044-88-68</a>
                                 </div>
                             </div>
 
@@ -946,8 +1003,8 @@ import Diploms from "@/components/Diploms";
                         </div>
                         <Questions />
 
-                        <h3>ПОЧЕМУ СТОИТ ОБРАТИТЬСЯ К ДОКТОРУ РЯБОВУ?</h3>
-                        <h2>Моя миссия</h2>
+                        <h3>ПОЧЕМУ СТОИТ ОБРАТИТЬСЯ К ДОКТОРУ Нам?</h3>
+                        <h2>Наша миссия</h2>
 
                         <div className="mission">
                             <div className="pic123 w-50">
@@ -967,7 +1024,7 @@ import Diploms from "@/components/Diploms";
                                     инновационных
                                     методик.</p>
                                 <div className="block-number">
-                                    <a className="number" href="tel:+998970448868">+998 (97) 044-88-68</a>
+                                    <a className="number" href="tel:+998970448868">+998 (88) 044-88-68</a>
                                 </div>
                             </div>
                         </div>

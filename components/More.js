@@ -16,7 +16,7 @@ const modalsData = [
             "    СЛИВ РЕЗЕКЦИЯ, ГАСТРОШУНТИРОВАНИЕ"
     },
     {
-        title: "РОБОТ-АССИСТИРОВАННАЯ",
+        title: "РОБОТ-АССИСТИРОВАННАЯ ХИРУРГИЯ",
         image: "./img/serv03.jpg",
         content: "Bu intervension xirurgiya haqida to‘liq ma’lumot."
     },

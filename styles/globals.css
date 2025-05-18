@@ -208,7 +208,7 @@ header {
 }
 
 header nav {
-    width: 50%;
+    /*width: 50%;*/
 }
 
 header nav ul {
@@ -240,12 +240,14 @@ header nav .exit {
 
 header .contacts {
     align-items: center;
-    font-size: 14px;
+    margin-top: -4px;
+    font-size: 18px;
     padding: 0 0 0 40px;
-    color: #fff;
+    color: rgba(0, 89, 255, 0.72);
     text-transform: uppercase;
     box-sizing: border-box;
-    width: 50%;
+    font-weight: bold;
+    /*width: 100%;*/
     display: flex;
     justify-content: space-between;
 }
