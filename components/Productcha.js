@@ -8,6 +8,7 @@
     import Modalcha from "@/components/Modalcha";
     import {API_PATH} from "@/components/const";
     import CustomModal from "@/components/CustomModal";
+    import VideoReviewVer from "@/components/VideoReviewVer";
 
     const Productcha = () => {
 
@@ -132,50 +133,44 @@
 
                 <div className="container mt-3">
                     <div className="row">
-                        <div className="col-md-8">
+                        <div className="col-md-9">
                             <div className="row">
-                                {products.map((product) => (
-                                    <div key={product.id} className="col-md-6 pb-3">
-                                        <div  className={styles.product}>
-                                            <img src={product.photo} alt="image" />
-                                            <div className={styles.productInfo}>
-                                                <div>
-                                                    <h2 className={styles.productTitle}>{product.title}</h2>
-                                                    <p style={{textAlign: "justify"}} className={styles.productDescription}>{product.description}</p>
-                                                </div>
-                                                <div>
-                                                    <p style={{textAlign: "left", fontSize: "20px", borderTop: "1px solid black" }} className="fw-bold text-dark-emphasis mt-2 pt-2">{product.price?.slice(0, -3)} сум</p>
-                                                    <button className={styles.addToCart}   onClick={() => addToCart(product)}>
-                                                        Добавить в корзину
-                                                    </button>
-                                                </div>
-
-                                            </div>
-                                        </div>
+                                <div className="col-md-3">
+                                    <div className="row">
+                                        <VideoReviewVer />
                                     </div>
+                                </div>
+                                <div className="col-md-9">
+                                    <div className="row">
+                                        {products.map((product) => (
+                                            <div key={product.id} className="col-md-6 pb-3">
+                                                <div  className={styles.product}>
+                                                    <img src={product.photo} alt="image" />
+                                                    <div className={styles.productInfo}>
+                                                        <div>
+                                                            <h2 className={styles.productTitle}>{product.title}</h2>
+                                                            <p style={{textAlign: "justify"}} className={styles.productDescription}>{product.description}</p>
+                                                        </div>
+                                                        <div>
+                                                            <p style={{textAlign: "left", fontSize: "20px", borderTop: "1px solid black" }} className="fw-bold text-dark-emphasis mt-2 pt-2">{product.price?.slice(0, -3)} сум</p>
+                                                            <button className={styles.addToCart}   onClick={() => addToCart(product)}>
+                                                                Добавить в корзину
+                                                            </button>
+                                                        </div>
 
-                                ))}
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
-                            {/*<div className={styles.productList}>*/}
-                            {/*    {products.map((product) => (*/}
-                            {/*        <div key={product.id} className={styles.product}>*/}
-                            {/*            <img src={product.img} alt={product.title} />*/}
-                            {/*            <div className={styles.productInfo}>*/}
-                            {/*               <div>*/}
-                            {/*                   <h2 className={styles.productTitle}>{product.title}</h2>*/}
-                            {/*                   <p style={{textAlign: "justify"}} className={styles.productDescription}>{product.description}</p>*/}
-                            {/*                   <p style={{textAlign: "left"}}>{product.price} сум</p>*/}
-                            {/*               </div>*/}
-                            {/*                <button className={styles.addToCart}  style={{margin: "auto", display: "block"}} onClick={() => addToCart(product)}>*/}
-                            {/*                    Добавить в корзину*/}
-                            {/*                </button>*/}
-                            {/*            </div>*/}
-                            {/*        </div>*/}
-                            {/*    ))}*/}
-                            {/*</div>*/}
+
+
                         </div>
 
-                        <div className="col-md-4">
+                        <div className="col-md-3">
                             {cart.length > 0 && (
                                 <div className={styles.cart}>
                                     <h2>Корзина</h2>

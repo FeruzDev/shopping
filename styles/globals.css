@@ -281,7 +281,33 @@ header .contacts .soc a {
     align-items: center;
     justify-content: center;
 }
+.soc{
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100%;
+}
 
+.soc span{
+    margin-left: 8px;
+}
+.soc-fac{
+    background: rgba(59, 89, 152, 0.6);
+}
+.soc-tel{
+    background: rgba(34, 158, 217, 0.6);
+}
+.soc-ins{
+    background: rgba(185, 0, 180,   0.6);
+
+}
+.soc-you{
+    background: rgba(255, 0, 0, 0.6);
+}
 header a.menu-burger {
     display: none;
 }
@@ -4321,4 +4347,9 @@ section .content{
 }
 .ar-down{
     width: 8px;
+}
+
+.all2123{
+    max-height: 800px;
+    overflow-y: auto;
 }
