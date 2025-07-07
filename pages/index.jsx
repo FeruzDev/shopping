@@ -36,7 +36,7 @@ const Index = () => {
                     </li>
                     <li>
                       <Link className="text-uppercase" href="/blog">
-                        Инструкция
+                        НОВОСТИ
                       </Link>
                     </li>
                     <li>
@@ -269,9 +269,9 @@ const Index = () => {
                           />
                         </svg>
                       </div>
-                      <span className="text-lowercase">
-                        {" "}
-                        ХИТРУРГ-КОЛОПРОКТОЛОГ
+                      <span className="">
+                        Хирург-колопроктолог, основатель "KOLOSTOMA SERVIS"
+                        медицинский центр для стомированных больных в Ташкенте
                       </span>
                     </div>
                     <div className="block">

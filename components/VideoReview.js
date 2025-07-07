@@ -8,12 +8,12 @@ const VideoReview = () => {
       img: "https://i.ytimg.com/vi/RojwdwnkxZA/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDmkW9wOZrfwHW89IPWsFiq0c-Nxw",
     },
     {
-      video: "https://www.youtube.com/embed/PsGcqKKs4rs?si=1XD0qDaa8y1Nxlrk",
-      img: "https://i.ytimg.com/vi/PsGcqKKs4rs/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDuwGA3h4adzSqMzCx18bxnQWdLCw",
+      video: "https://www.youtube.com/embed/mkIw8BUoPkE?si=CfKsBtMrnot6m4Tv",
+      img: "https://i.ytimg.com/vi/mkIw8BUoPkE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBJXHiUkDHt-0-ZdYz76rwrAaMa3Q",
     },
     {
-      video: "https://www.youtube.com/embed/K6ksFZxgUF8?si=xkGGeu8LaQkQoHei",
-      img: "https://i.ytimg.com/vi/K6ksFZxgUF8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCZui9uOTuRMHjJhvefUL_JvFmrfw",
+      video: "https://www.youtube.com/embed/cywM-BISq8c?si=zwGS2HgVaC6fRzuW",
+      img: "https://i.ytimg.com/vi/cywM-BISq8c/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDlwBWA3AgrMt2EEb4Y34i8i2BtAg",
     },
   ];
 
@@ -72,7 +72,7 @@ const VideoReview = () => {
                 selectedVideo === video ? "border-blue-500" : "border-gray-300"
               }`}
               onClick={() => setSelectedVideo(video?.video)}
-            style={{backgroundColor:'transparent'}}
+              style={{ backgroundColor: "transparent" }}
             >
               <img
                 src={video?.img}

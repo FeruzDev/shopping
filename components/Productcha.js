@@ -112,7 +112,7 @@ const Productcha = () => {
         <nav>
           <ul>
             <li>
-              <Link href="/">СПЕЦИАЛИЗАЦИЯ</Link>
+              <Link href="/">ГЛАВНАЯ</Link>
             </li>
             <li>
               <Link href="/">ПАЦИЕНТЫ</Link>
