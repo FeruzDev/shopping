@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 
 const modalsData = [
   {
-    title: "Лапароскопическая, полостная хирургия",
+    title: "ГРЫЖИ ПЕРЕДНЕЙ БРЮШНОЙ СТЕНКИ",
     image: "./img/serv01.jpg",
     content: "Bu laparoskopik va polostnaya xirurgiya haqida to‘liq ma’lumot.",
   },
@@ -17,7 +17,7 @@ const modalsData = [
       "    СЛИВ РЕЗЕКЦИЯ, ГАСТРОШУНТИРОВАНИЕ",
   },
   {
-    title: "РОБОТ-АССИСТИРОВАННАЯ ХИРУРГИЯ",
+    title: "РАК ТОЛЬСТО КИШКИ",
     image: "./img/serv03.jpg",
     content: "Bu intervension xirurgiya haqida to‘liq ma’lumot.",
   },

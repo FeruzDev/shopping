@@ -75,14 +75,14 @@ const BlogMain = () => {
           <nav>
             <ul>
               <li>
-                <Link href="/">СПЕЦИАЛИЗАЦИЯ</Link>
+                <Link href="/">ГЛАВНАЯ</Link>
               </li>
               <li>
                 <Link href="/">СЕРТИФИКАТЫ</Link>
               </li>
               <li>
                 <Link className="text-uppercase" href="/blog">
-                  Инструкция
+                  НОВОСТИ
                 </Link>
               </li>
               <li>
@@ -96,7 +96,7 @@ const BlogMain = () => {
         </header>
         <div className="bg-dark">
           <div className="container">
-            <h3 className="text-white   pt-4 pb-4">Инструкция</h3>
+            <h3 className="text-white   pt-4 pb-4">НОВОСТИ</h3>
           </div>
         </div>
 

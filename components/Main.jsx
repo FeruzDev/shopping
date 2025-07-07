@@ -21,7 +21,7 @@ const Main = () => {
                 </li>
                 <li>
                   <Link className="text-uppercase" href="/blog">
-                    Инструкция
+                    НОВОСТИ
                   </Link>
                 </li>
                 <li>
