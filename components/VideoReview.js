@@ -21,7 +21,6 @@ const VideoReview = () => {
 
   return (
     <div className="all">
-      <h3>ПАЦИЕНТЫ О ЛЕЧЕНИИ У ДОКТОРА РЯБОВА</h3>
       <h2 className="dark">Видео-отзывы</h2>
 
       {/*<div className="why-block video">*/}
@@ -73,6 +72,7 @@ const VideoReview = () => {
                 selectedVideo === video ? "border-blue-500" : "border-gray-300"
               }`}
               onClick={() => setSelectedVideo(video?.video)}
+            style={{backgroundColor:'transparent'}}
             >
               <img
                 src={video?.img}
