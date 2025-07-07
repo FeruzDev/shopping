@@ -9,6 +9,7 @@ import Modalcha from "@/components/Modalcha";
 import { API_PATH } from "@/components/const";
 import CustomModal from "@/components/CustomModal";
 import VideoReviewVer from "@/components/VideoReviewVer";
+import PhoneContact from "./Phone-contact";
 
 const Productcha = () => {
   const [cart, setCart] = useState([]); // localStorage o'chirildi
@@ -106,6 +107,7 @@ const Productcha = () => {
 
   return (
     <div>
+      <PhoneContact/>
       <header className="container" style={{ height: "80px" }}>
         <nav>
           <ul>

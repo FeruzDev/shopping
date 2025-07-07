@@ -4,6 +4,7 @@ import Link from "next/link";
 // import {Menu} from 'antd';
 import axios from "axios";
 import { API_PATH } from "@/components/const";
+import PhoneContact from "./Phone-contact";
 const BlogMain = () => {
   const menus2 = [
     {
@@ -69,6 +70,7 @@ const BlogMain = () => {
   return (
     <div>
       <section className="mb-0 w-100">
+        <PhoneContact/>
         <header className="container" style={{ height: "80px" }}>
           <nav>
             <ul>
