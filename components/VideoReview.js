@@ -1,4 +1,4 @@
-"use client"; // 👈 BUNI ALBATTA YOZING!!
+"use client";
 import React, { useState } from "react";
 
 const VideoReview = () => {
