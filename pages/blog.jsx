@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import BlogMain from "@/components/BlogMain";
 
 const Blog = () => {
-    return (
-        <>
-            <BlogMain />
-        </>
-    );
+  return (
+    <>
+      <BlogMain />
+    </>
+  );
 };
 
 export default Blog;

@@ -6,146 +6,57 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import React from "react";
 
+const videos = [
+  {
+    video: "https://youtube.com/shorts/n6sGnrLOmjQ?si=XlgqjowDm6zykaTW",
+    image:
+      "https://i.ytimg.com/vi/n6sGnrLOmjQ/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLCa_VQYQc6_pEadm3LRrjXYtcyvLA",
+  },
+  {
+    video: "https://youtube.com/shorts/tHkFHQLOyIA?si=ZNpjaD8mKlqRasYI",
+    image:
+      "https://i.ytimg.com/vi/tHkFHQLOyIA/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLBCAbBjCJVTux8sdalgacbtzVDZ6A",
+  },
+  {
+    video: "https://youtube.com/shorts/2TXbLf0FLts?si=dkMWxl33SUIRd-M6",
+    image:
+      "https://i.ytimg.com/vi/2TXbLf0FLts/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLBD35Hcia7CjQ9akO82nRIjcnwN_g",
+  },
+  {
+    video: "https://youtube.com/shorts/n6sGnrLOmjQ?si=XlgqjowDm6zykaTW",
+    image:
+      "https://i.ytimg.com/vi/n6sGnrLOmjQ/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLCa_VQYQc6_pEadm3LRrjXYtcyvLA",
+  },
+  {
+    video: "https://youtube.com/shorts/tHkFHQLOyIA?si=ZNpjaD8mKlqRasYI",
+    image:
+      "https://i.ytimg.com/vi/tHkFHQLOyIA/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLBCAbBjCJVTux8sdalgacbtzVDZ6A",
+  },
+  {
+    video: "https://youtube.com/shorts/2TXbLf0FLts?si=dkMWxl33SUIRd-M6",
+    image:
+      "https://i.ytimg.com/vi/2TXbLf0FLts/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLBD35Hcia7CjQ9akO82nRIjcnwN_g",
+  },
+];
+
 export default function Carousel() {
-    return (
-        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-
-
-            <SwiperSlide>
-                <div className="item i1 item-i1">
-                    <div className="photoot1">
-                        <img src="./img/rev02.jpg" alt=""/>
-                    </div>
-                    <div className="t">
-                        <span
-                            className="title">Высокий профессионализм, чуткое внимательное отношение к пациентам</span>
-                        <div className="txt">
-                            Позвольте искренне поблагодарить весь медицинский персонал хирургического
-                            отделения клиники
-                            Medica&nbsp;24 за его высокий профессионализм, чуткое внимательное отношение
-                            к пациентам.
-                            Врачи и медицинские сестры хирургического отделения выполняют свой врачебный
-                            долг, они
-                            действительно врачеватели души и тела человека, за что им огромное спасибо и
-                            слова
-                            признательности за их благородный труд. Особенно отмечаю работу хирургов
-                            Рябова Обид Собирович, Семушина Валентина Валентиновича, Поморцева Бориса
-                            Алексеевича и
-                            Коротаева
-                            Александра Валерьевича. От всего сердца желаю вам и всем сотрудникам клиники
-                            доброго
-                            здоровья, счастья и благополучия, успехов в вашем нелегком, но так
-                            необходимым людям труде.
-                        </div>
-                    </div>
-
-                    <div className="photoot2">
-                        <img src="./img/rev05.png" alt=""/>
-
-                    </div>
-                    {/*<div className="photo"*/}
-                    {/*     style="background-image: url(./img/rev02.jpg);"></div>*/}
-                </div>
-
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className="item i2 item-i1">
-
-                    <div className="photoot1">
-                        <img src="./img/rev04.png" alt=""/>
-                    </div>
-                    <div className="t">
-                        <span className="title">Спасибо от меня и всей моей семьи за профессионализм, поддержку, чуткое и внимательное отношение</span>
-                        <div className="txt">
-                            Выражаю благодарность заведующему хирургическим отделением – клиники
-                            «Medica&nbsp;24» Рябову
-                            Обид Собирович за успешно проведенную операцию 14 мая 2020 года и
-                            возвращение к
-                            полноценной жизни. Спасибо от меня и всей моей семьи за профессионализм,
-                            поддержку, чуткое и
-                            внимательное отношение. Это – огромное счастье, что такие компетентные,
-                            умелые и
-                            талантливые, неравнодушные люди работают именно там, где они больше всего
-                            нужны. Отдельное
-                            спасибо медицинскому персоналу хирургического отделения. Ваши терпение,
-                            отзывчивость,
-                            чуткость, понимание, забота, доброжелательное и внимательное отношение,
-                            лечат лучше
-                            медицинских процедур. Желаю крепкого здоровья, долгих счастливых лет жизни,
-                            удовольствия от
-                            работы и исполнения всех замыслов.
-                        </div>
-
-                    </div>
-
-                    <div className="photoot2">
-                        <img src="./img/rev03.jpg" alt=""/>
-                    </div>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className="item i3 item-i1">
-
-                    <div className="photoot1">
-                        <img src="./img/rev02.jpg" alt=""/>
-                    </div>
-                    <div className="t">
-                        <span className="title">Это врач от бога</span>
-                        <div className="txt">
-                            Оперировалась у врача Рябова Обид Собирович. Это врач от бога:
-                            внимательный,
-                            обходительный, руки у него золотые. Я побывала на многочисленных
-                            обследованиях и лечениях (в
-                            кавычках) во многих клиниках Москвы и Санкт-Петербурга, а также Германии и
-                            Израиля. И нигде
-                            мне не помогли. И только Обид Собирович (низкий ему поклон) смог
-                            правильно поставить
-                            диагноз и прооперировать. Я так счастлива, что мне посоветовали Обид
-                            Собирович. Я уже
-                            отчаялась. Спасибо ему огромное! Всем рекомендую не пытаться искать врачей,
-                            а идти сразу к
-                            лучшему доктору - Обид Собирович!
-                        </div>
-                    </div>
-
-
-                    <div className="photoot2">
-                        <img src="./img/rev04.png" alt=""/>
-                    </div>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-
-                <div className="item i4 item-i1">
-
-                    <div className="photoot1">
-                        <img src="./img/rev02.jpg" alt=""/>
-                    </div>
-                    <div className="t">
-                        <span className="title">Удовольствие конечно не из дешевых, но потраченных денег не жалею, все на уровне!</span>
-                        <div className="txt">
-                            В начале марта была в этой клинике, так мне требовалось сделать срочно
-                            гастроскопию перед
-                            операцией.. Очень волновалась, так эта процедура не из самых приятных. В
-                            результате провёл
-                            мне ее доктор эндоскопист Обид Собирович. Решили сделать с анестезией, и
-                            в итоге я
-                            вообще не почувствовала каких-либо неприятных ощущений от исследования.
-                            Уснула, потом
-                            проснулась - а все уже сделано. Удовольствие конечно не из дешевых, но
-                            потраченных денег не
-                            жалею, все на уровне! Спасибо
-                        </div>
-                    </div>
-
-                    <div className="photoot2">
-                        <img src="./img/rev04.png" alt=""/>
-                    </div>
-
-                    {/*<div className="photo"*/}
-                    {/*     style="background-image: url(./img/rev05.png);"></div>*/}
-                </div>
-            </SwiperSlide>
-        </Swiper>
-    );
+  return (
+    <Swiper
+      navigation={true}
+      modules={[Navigation]}
+      slidesPerView={5}
+      className="mySwiper"
+    >
+      {videos.map((item, index) => (
+        <SwiperSlide>
+          <button
+            key={index}
+            className={`w-100 h-16 border-0 rounded-lg overflow-hidden shadow-md transition-all duration-200 `}
+          >
+            <img src={item?.image} alt={`Video ${index + 1}`} />
+          </button>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
 }

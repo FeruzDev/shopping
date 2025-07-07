@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import Productcha from "@/components/Productcha";
 
 const Products = () => {
-    return (
-        <>
-            <Productcha />
-        </>
-    );
+  return (
+    <>
+      <Productcha />
+    </>
+  );
 };
 
 export default Products;
