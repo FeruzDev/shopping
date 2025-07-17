@@ -174,7 +174,7 @@ const Main = () => {
             <div className="col-md-6">
               <div className="first-screen-img ">
                 <img
-                  src="/img/img1233.png"
+                  src="/img/img1234.jpg"
                   className="w-100"
                   style={{ borderRadius: "10px" }}
                   alt="..."
@@ -190,7 +190,7 @@ const Main = () => {
             <div className="col-md-6">
               <div className="first-screen-img ">
                 <img
-                  src="/img/img1234.jpg"
+                  src="/img/img1233.png"
                   className="w-100"
                   style={{ borderRadius: "10px" }}
                   alt="..."
