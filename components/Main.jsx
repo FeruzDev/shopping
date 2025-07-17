@@ -161,7 +161,7 @@ const Main = () => {
                     14 лет опыта работы и стажа хирургом
                   </div>
                 </div>
-                <div className="block-number">
+                <div className="first-block-number">
                   <a
                     className="number text-decoration-none"
                     href="tel:+998970448868"

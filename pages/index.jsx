@@ -11,84 +11,75 @@ const Index = () => {
     <div>
       {/*<video src="/img/kolo.mp4" style={{width: "100%", height: "100%"}} muted autoPlay></video>*/}
 
-      <div className="">
+      <section className="header_section">
+        <PhoneContact />
+        <header className="main_haeder">
+          <div className="d-flex justify-content-between">
+            <nav>
+              <ul>
+                <li>
+                  <Link href="/">ГЛАВНАЯ</Link>
+                </li>
+                <li>
+                  <Link href="/">ХИРУРГИЯ</Link>
+                </li>
+                <li>
+                  <Link href="/">БАРИАТРИЯ</Link>
+                </li>
+                <li>
+                  <Link href="/">ОНКОЛОГИЯ</Link>
+                </li>
+                <li className="text-uppercase">
+                  <Link href="/">КОЛОПРОКтология</Link>
+                </li>
+                <li>
+                  <Link className="text-uppercase" href="/blog">
+                    НОВОСТИ
+                  </Link>
+                </li>
+                <li>
+                  <Link className="text-uppercase" href="/products">
+                    КОЛОСТОМА СЕРВИС
+                  </Link>
+                </li>
+              </ul>
+              {/*<span className="exit"></span>*/}
+            </nav>
+
+            <div className="contacts">
+              <div className="address">
+                <a className="" href="tel:+998970448868">
+                  +998 88 044 88 68
+                </a>
+              </div>
+              {/*<div className="soc">*/}
+              {/*    <a href="https://t.me/+998970448868"><img*/}
+              {/*        src="/img/telegram.png"*/}
+              {/*        height="17"/></a>*/}
+              {/*    <a href="#">*/}
+              {/*        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11"*/}
+              {/*             viewBox="0 0 17 11" fill="none">*/}
+              {/*            <script xmlns="" id="eppiocemhmnlbhjplcgkofciiegomcon"/>*/}
+              {/*            <script xmlns=""/>*/}
+              {/*            <script xmlns=""/>*/}
+              {/*            <path fillRule="evenodd" clipRule="evenodd"*/}
+              {/*                  d="M6.74335 3.15023L11.3333 5.31925L6.74335 7.48826V3.15023ZM17 4.9061C17 3.66667 16.83 2.37559 16.83 2.37559C16.83 2.37559 16.66 1.29108 16.15 0.826291C15.5267 0.206573 14.79 0.206573 14.45 0.15493C12.07 9.23452e-08 8.5 0 8.5 0C8.5 0 4.93 9.23452e-08 2.55 0.15493C2.21 0.206573 1.47333 0.206573 0.85 0.826291C0.34 1.29108 0.17001 2.37559 0.17001 2.37559C0.17001 2.37559 0 3.61502 0 4.9061V6.0939C0 7.33333 0.17001 8.62441 0.17001 8.62441C0.17001 8.62441 0.34 9.70892 0.85 10.1737C1.47333 10.7934 2.32334 10.7934 2.72001 10.8451C4.08001 10.9484 8.5 11 8.5 11C8.5 11 12.07 11 14.45 10.8451C14.79 10.7934 15.5267 10.7934 16.15 10.1737C16.66 9.70892 16.83 8.62441 16.83 8.62441C16.83 8.62441 17 7.38498 17 6.0939V4.9061Z"*/}
+              {/*                  fill="white"/>*/}
+              {/*        </svg>*/}
+              {/*    </a>*/}
+              {/*</div>*/}
+            </div>
+          </div>
+
+          <a href="#" className="menu-burger">
+            <img src="/img/burger.svg" />
+          </a>
+        </header>
+      </section>
+      <div className="content_block">
         <section className="first-screen mb-0">
-          <PhoneContact />
           <div className="all">
-            <header>
-              <div className="d-flex justify-content-between">
-                <nav>
-                  <ul>
-                    <li>
-                      <Link href="/">ГЛАВНАЯ</Link>
-                    </li>
-                    <li>
-                      <Link href="/">ХИРУРГИЯ</Link>
-                    </li>
-                    <li>
-                      <Link href="/">БАРИАТРИЯ</Link>
-                    </li>
-                    <li>
-                      <Link href="/">ОНКОЛОГИЯ</Link>
-                    </li>
-                    <li className="text-uppercase">
-                      <Link href="/">КОЛОПРОКтология</Link>
-                    </li>
-                    <li>
-                      <Link className="text-uppercase" href="/blog">
-                        НОВОСТИ
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="text-uppercase" href="/products">
-                        КОЛОСТОМА СЕРВИС
-                      </Link>
-                    </li>
-                  </ul>
-                  {/*<span className="exit"></span>*/}
-                </nav>
-
-                <div className="contacts">
-                  <div className="address">
-                    <a className="" href="tel:+998970448868">
-                      +998 88 044 88 68
-                    </a>
-                  </div>
-                  {/*<div className="soc">*/}
-                  {/*    <a href="https://t.me/+998970448868"><img*/}
-                  {/*        src="/img/telegram.png"*/}
-                  {/*        height="17"/></a>*/}
-                  {/*    <a href="#">*/}
-                  {/*        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11"*/}
-                  {/*             viewBox="0 0 17 11" fill="none">*/}
-                  {/*            <script xmlns="" id="eppiocemhmnlbhjplcgkofciiegomcon"/>*/}
-                  {/*            <script xmlns=""/>*/}
-                  {/*            <script xmlns=""/>*/}
-                  {/*            <path fillRule="evenodd" clipRule="evenodd"*/}
-                  {/*                  d="M6.74335 3.15023L11.3333 5.31925L6.74335 7.48826V3.15023ZM17 4.9061C17 3.66667 16.83 2.37559 16.83 2.37559C16.83 2.37559 16.66 1.29108 16.15 0.826291C15.5267 0.206573 14.79 0.206573 14.45 0.15493C12.07 9.23452e-08 8.5 0 8.5 0C8.5 0 4.93 9.23452e-08 2.55 0.15493C2.21 0.206573 1.47333 0.206573 0.85 0.826291C0.34 1.29108 0.17001 2.37559 0.17001 2.37559C0.17001 2.37559 0 3.61502 0 4.9061V6.0939C0 7.33333 0.17001 8.62441 0.17001 8.62441C0.17001 8.62441 0.34 9.70892 0.85 10.1737C1.47333 10.7934 2.32334 10.7934 2.72001 10.8451C4.08001 10.9484 8.5 11 8.5 11C8.5 11 12.07 11 14.45 10.8451C14.79 10.7934 15.5267 10.7934 16.15 10.1737C16.66 9.70892 16.83 8.62441 16.83 8.62441C16.83 8.62441 17 7.38498 17 6.0939V4.9061Z"*/}
-                  {/*                  fill="white"/>*/}
-                  {/*        </svg>*/}
-                  {/*    </a>*/}
-                  {/*</div>*/}
-                </div>
-              </div>
-
-              <a href="#" className="menu-burger">
-                <img src="/img/burger.svg" />
-              </a>
-            </header>
-
             <div className="row">
-              <div className="col-md-6">
-                <div className="first-screen-img ">
-                  <img
-                    src="/img/img1234.jpg"
-                    className="w-100"
-                    style={{ borderRadius: "10px" }}
-                    alt="..."
-                  />
-                </div>
-              </div>
               <div className="col-md-6">
                 <div className="text">
                   <h1>ТОЛИПОВ ДАВЛАТХОН МУСУЛМОН УГЛИ</h1>
@@ -154,8 +145,7 @@ const Index = () => {
                         </svg>
                       </div>
                       <span className="">
-                        Хирург-колопроктолог, основатель "KOLOSTOMA SERVIS"
-                        медицинский центр для стомированных больных в Ташкенте
+                        Хирург-колопроктолог, Основатель "KOLOSTOMA SERVIS"
                       </span>
                     </div>
                     <div className="block">
@@ -192,12 +182,32 @@ const Index = () => {
                   </div>
                 </div>
               </div>
+              <div className="col-md-6">
+                <div className="first-screen-img ">
+                  <img
+                    src="/img/img1234.jpg"
+                    className="w-100"
+                    style={{ borderRadius: "10px" }}
+                    alt="..."
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
         <section className="first-screen mt-3 mb-0 h-auto">
           <div className="all">
             <div className="row">
+              <div className="col-md-6">
+                <div className="first-screen-img ">
+                  <img
+                    src="/img/img1233.png"
+                    className="w-100"
+                    style={{ borderRadius: "10px" }}
+                    alt="..."
+                  />
+                </div>
+              </div>
               <div className="col-md-6">
                 <div className="text">
                   <h1>РИЗАЕВ ОБИД СОБИРОВИЧ</h1>
@@ -296,16 +306,6 @@ const Index = () => {
                       +998 (88) 044-88-68
                     </a>
                   </div>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="first-screen-img ">
-                  <img
-                    src="/img/img1233.png"
-                    className="w-100"
-                    style={{ borderRadius: "10px" }}
-                    alt="..."
-                  />
                 </div>
               </div>
             </div>
